@@ -58,6 +58,8 @@
         @include margin-top(1);
         @include margin-bottom(2);
         &-text {
+            font-style: italic;
+            color: $color-gray;
             & a {
                 text-decoration: underline;
             }

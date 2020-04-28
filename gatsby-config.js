@@ -7,10 +7,9 @@ module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
-    subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+    title: 'Dan Kouba\'s Blog',
+    subtitle: 'A little bit about a lot of things',
+    copyright: '© 2020, Daniel Kouba',
     disqusShortname: '',
     menu: [
       {
@@ -27,13 +26,18 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'Dan Kouba',
+      degree: "Electrical Engineer",
+      title: "Solutions Architect",
+      business_name: "Particle",
+      business_link: "www.particle.io",
+      email: 'Ductapemaster@gmail.com',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'Ductapemaster',
       rss: '#',
       vk: '#',
+      ig: 'scubakouba',
     },
   },
   plugins: [

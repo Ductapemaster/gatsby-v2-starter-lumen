@@ -12,10 +12,10 @@ class NotFoundRoute extends React.Component {
           <div className="content">
             <div className="content__inner">
               <div className="page">
-                <h1 className="page__title">NOT FOUND</h1>
+                <h1 className="page__title">PAGE NOT FOUND</h1>
                 <div className="page__body">
                   <p>
-                    You just hit a route that doesn&#39;t exist... the sadness.
+                    You've found the end of the rainbow 🌈
                   </p>
                 </div>
               </div>
@@ -42,12 +42,17 @@ export const pageQuery = graphql`
         }
         author {
           name
+          degree
+          title
+          business_name
+          business_link
           email
           telegram
           twitter
           github
           rss
           vk
+          ig
         }
       }
     }

@@ -36,7 +36,6 @@ export const pageQuery = graphql`
         copyright
         author {
           name
-          twitter
         }
         disqusShortname
         url
@@ -54,6 +53,15 @@ export const pageQuery = graphql`
         tags
         date
         description
+      }
+    }
+    categories: allMarkdownRemark(
+      limit: 2000
+      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+    ) {
+      group(field: frontmatter___category) {
+        fieldValue
+        totalCount
       }
     }
   }

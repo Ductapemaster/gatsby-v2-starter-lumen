@@ -46,12 +46,17 @@ export const pageQuery = graphql`
         }
         author {
           name
+          degree
+          title
+          business_name
+          business_link
           email
           telegram
           twitter
           github
           rss
           vk
+          ig
         }
       }
     }
@@ -73,6 +78,15 @@ export const pageQuery = graphql`
             description
           }
         }
+      }
+    }
+    categories: allMarkdownRemark(
+      limit: 2000
+      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+    ) {
+      group(field: frontmatter___category) {
+        fieldValue
+        totalCount
       }
     }
   }
