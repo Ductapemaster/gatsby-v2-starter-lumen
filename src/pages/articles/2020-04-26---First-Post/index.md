@@ -6,6 +6,7 @@ draft: false
 path: "/posts/first-post/"
 category: "General"
 tags:
+  - Writing
 description: "A new experiment: blogging"
 ---
 
